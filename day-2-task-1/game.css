@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 5vh;
+    color: #333;
+}
+
+h1 {
+    font-size: 5vh;
+    margin-bottom: 0;
+}
+
+p {
+    font-size: 2.4vh;
+}
+
+.questionmark {
+    font-size: 8vh;
+    font-weight: bold;
+    width: 15vh;
+    height: 15vh;
+    margin: 4vh auto;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+input {
+    padding: 2vh;
+    font-size: 2vh;
+    width: 30vh;
+    margin-top: 2vh;
+}
+
+button {
+    padding: 2vh 4vh;
+    font-size: 2vh;
+    margin: 2vh 1vh;
+    cursor: pointer;
+    border: none;
+    border-radius: 1vh;
+}
+
+.check {
+    background-color: green;
+    color: white;
+}
+
+.again {
+    background-color: red;
+    color: white;
+}
+
+#generating {
+    margin-top: 4vh;
+    font-weight: bold;
+}
