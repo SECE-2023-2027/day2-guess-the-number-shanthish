@@ -32,16 +32,19 @@ const checkfunc = ()=>{
     }
 }
 
-
-
 btn.addEventListener("click",checkfunc);
-reset.addEventListener("click",()=>{
-    ans=Math.floor(Math.random()*20)+1;
-    guessing.textContent="Start Generating";
-    score.textContent=20;
-    quesmark.textContent="?";
-    document.querySelector("body").style.backgroundColor="white";
-    // document.querySelector("body").appendChild("num")
-    document.createElement("input");
-    
+reset.addEventListener("click", () => {
+    ans = Math.floor(Math.random() * 20) + 1;
+    guessing.textContent = "Start Generating";
+    score.textContent = 20;
+    quesmark.textContent = "?";
+    document.body.style.backgroundColor = "white";
+
+    if (!document.querySelector("input")) {
+        num = document.createElement("input");
+        num.type = "number";
+        num.id = "number1";
+        num.placeholder = "enter the number";
+        document.body.insertBefore(num, btn);
+    }
 })
